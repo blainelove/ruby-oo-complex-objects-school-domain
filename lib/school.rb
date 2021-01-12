@@ -10,7 +10,7 @@ class School
     end
 
     def add_student(studentname, grade)
-        if roster[grade]
+        if roster.key?(grade)
             roster[grade] << studentname 
         else 
             roster[grade] = []
